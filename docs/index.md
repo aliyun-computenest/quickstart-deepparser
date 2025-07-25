@@ -75,13 +75,11 @@ Deepparser应用的组件主要包括业务组件和基础组件两大类，业�
 **方式一：** 通过负载均衡访问，按照如下步骤进行配置
 ![img.png](9.png)
 配置完成后，您会看到ack-deepparser服务的外部IP地址（External IP），将该外部IP地址输入浏览器地址栏即可访问Deepparser服务。
-![img.png](19.png)
-
+![img.png](15.png)
+![img.png](16.png)
 **方式二：** 通过配置Ingress访问，按照如下步骤进行配置
-首先集群中安装Nginx Ingress Controller组件，再配置相关路由，按照如下步骤配置
-![img.png](19.png)
+首先集群中安装Nginx Ingress Controller组件，再配置相关路由
 配置完成后，您会看到Ingress的端点，将此端点对域名绑定host或配置解析后，即可通过域名访问Deepparser。
-![img.png](14.png)
 
 ### 配置Deepparser 服务的弹性伸缩
 如果希望实现弹性扩缩容，
